@@ -1,0 +1,361 @@
+[
+  {
+    "id": "i0000001-0000-0000-0000-000000000001",
+    "submission_id": "s0000001-0000-0000-0000-000000000001",
+    "user_id": "usr_participant_1",
+    "participant_name": "Adaeze Okonkwo",
+    "status": "completed",
+    "questions": [
+      {
+        "id": "q0000001-0000-0000-0000-000000000001",
+        "order": 1,
+        "category": "technical",
+        "question": "Walk us through the feature engineering pipeline for your load forecasting model. What input features did you select and why?",
+        "context": "The submission uses a TFLite model for 4-hour-ahead demand forecasting on a Raspberry Pi.",
+        "expected_depth": "Should discuss time-of-day encoding, weather features, historical load patterns, and any domain-specific features like prayer time load spikes.",
+        "max_duration_seconds": 180
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000002",
+        "order": 2,
+        "category": "technical",
+        "question": "How do you handle the cold-start problem when deploying to a new mini-grid site with no historical data?",
+        "context": "The model was trained on data from 3 sites in Ogun State.",
+        "expected_depth": "Should discuss transfer learning, synthetic data, or rule-based fallback strategies for the initial deployment period.",
+        "max_duration_seconds": 180
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000003",
+        "order": 3,
+        "category": "process",
+        "question": "Describe a situation where your model made an incorrect prediction that had real-world consequences. How did you discover it and what did you change?",
+        "context": "The system is deployed on live mini-grids where incorrect predictions affect diesel consumption and battery health.",
+        "expected_depth": "Should provide a specific example with before/after metrics and demonstrate systematic debugging approach.",
+        "max_duration_seconds": 180
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000004",
+        "order": 4,
+        "category": "authenticity",
+        "question": "Your evaluation noted that the MQTT protocol choice reduced bandwidth by 94%. Can you explain the specific measurements and how you arrived at that figure?",
+        "context": "Evaluator flagged this as a key technical claim that should be verified.",
+        "expected_depth": "Should provide specific byte-level comparison between MQTT and HTTP for their payload structure and measurement methodology.",
+        "max_duration_seconds": 120
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000005",
+        "order": 5,
+        "category": "behavioral",
+        "question": "How did you manage the relationship with the mini-grid operators at Arnergy? What was the hardest feedback to incorporate?",
+        "context": "The submission mentions partnership with Arnergy for field deployment.",
+        "expected_depth": "Should demonstrate stakeholder management skills and ability to incorporate non-technical feedback into technical decisions.",
+        "max_duration_seconds": 150
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000006",
+        "order": 6,
+        "category": "technical",
+        "question": "If you were given $20,000 in grant funding, what would your first three months look like? What would you build or validate first?",
+        "context": "Assessing the candidate's ability to plan and prioritize with limited resources.",
+        "expected_depth": "Should demonstrate structured thinking about resource allocation, risk mitigation, and milestone planning.",
+        "max_duration_seconds": 180
+      }
+    ],
+    "overall_report": {
+      "overall_score": 88,
+      "recommendation": "Advance to Panel",
+      "summary": "Adaeze demonstrated deep technical knowledge of edge ML systems and provided specific, verifiable details about the SolarGrid deployment. Her answers revealed genuine field experience — the debugging story about the Ramadan load spike was particularly convincing. She showed strong stakeholder management skills and a clear, well-prioritized plan for grant utilization. The bandwidth reduction claim was well-substantiated with measurement data. Minor gap: could have discussed model monitoring and retraining more concretely.",
+      "strength_areas": [
+        "Deep understanding of edge deployment constraints and trade-offs",
+        "Specific, data-backed answers with real deployment metrics",
+        "Strong stakeholder management and ability to translate technical concepts for non-technical operators",
+        "Well-structured grant utilization plan with clear milestones"
+      ],
+      "concern_areas": [
+        "Model retraining and drift monitoring strategy needs more development",
+        "Cold-start strategy relies heavily on manual calibration — could be more automated"
+      ],
+      "red_flags": [],
+      "follow_up_questions": [
+        "What is the minimum data collection period needed before the model outperforms the rule-based fallback?",
+        "Have you considered federated learning across mini-grid sites to improve model generalization?"
+      ]
+    },
+    "created_at": "2025-04-10T09:00:00Z",
+    "completed_at": "2025-04-10T10:15:00Z"
+  },
+  {
+    "id": "i0000001-0000-0000-0000-000000000002",
+    "submission_id": "s0000001-0000-0000-0000-000000000002",
+    "user_id": "usr_participant_2",
+    "participant_name": "Youssef Benali",
+    "status": "completed",
+    "questions": [
+      {
+        "id": "q0000001-0000-0000-0000-000000000007",
+        "order": 1,
+        "category": "technical",
+        "question": "Explain the underactuated linkage mechanism in your prosthetic hand. How does 2 motors achieve functional grip across 3 distinct patterns?",
+        "context": "The submission claims a novel underactuated design that reduces motor count from 5 to 2.",
+        "expected_depth": "Should discuss the mechanical advantage, tendon routing, and adaptive grip mechanics in specific detail.",
+        "max_duration_seconds": 180
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000008",
+        "order": 2,
+        "category": "technical",
+        "question": "Walk us through your EMG signal processing pipeline. How do you handle noise from electrode movement and sweat artifacts?",
+        "context": "The system uses 2-channel surface EMG for 3-pattern classification.",
+        "expected_depth": "Should discuss filtering stages, feature extraction (RMS, MAV, zero crossings), and the classification architecture.",
+        "max_duration_seconds": 180
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000009",
+        "order": 3,
+        "category": "process",
+        "question": "You tested with 6 patients at CHU Ibn Rochd. Describe the clinical testing protocol — how did you recruit patients and what outcomes did you measure?",
+        "context": "Clinical validation is a key strength of this submission.",
+        "expected_depth": "Should describe IRB/ethics approval, patient selection criteria, outcome measures, and any adverse events.",
+        "max_duration_seconds": 180
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000010",
+        "order": 4,
+        "category": "authenticity",
+        "question": "Your BOM lists $85 total cost. Can you walk through the top 5 cost items and explain where you sourced them?",
+        "context": "The $85 cost claim is a central value proposition that needs verification.",
+        "expected_depth": "Should provide specific component costs, supplier names, and explain how costs would change at different production volumes.",
+        "max_duration_seconds": 150
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000011",
+        "order": 5,
+        "category": "behavioral",
+        "question": "What was the most difficult patient feedback you received during clinical testing, and how did it change your design?",
+        "context": "The submission mentions iterative design based on prosthetist and patient feedback.",
+        "expected_depth": "Should provide a specific, emotionally grounded answer that demonstrates empathy and design thinking.",
+        "max_duration_seconds": 150
+      }
+    ],
+    "overall_report": {
+      "overall_score": 93,
+      "recommendation": "Advance to Panel",
+      "summary": "Youssef is an exceptional candidate with deep, hands-on knowledge across mechanical design, embedded firmware, and clinical testing. His explanation of the underactuated linkage was detailed enough to be peer-reviewed. The EMG pipeline discussion revealed genuine signal processing expertise. The clinical testing protocol was well-designed, and his description of patient interactions was deeply empathetic. The BOM breakdown was precise and included realistic scaling projections. This is one of the strongest interview performances in this cohort.",
+      "strength_areas": [
+        "Exceptional depth in both mechanical and electrical engineering",
+        "Clinical testing protocol was rigorous and ethically sound",
+        "BOM is well-researched with realistic scaling projections",
+        "Patient empathy is genuine and informs design decisions",
+        "Clear vision for regulatory pathway through ANAM"
+      ],
+      "concern_areas": [
+        "Manufacturing scale-up plan could be more detailed — transition from 3D printing to injection molding is hand-waved"
+      ],
+      "red_flags": [],
+      "follow_up_questions": [
+        "What is the failure mode for the underactuated linkage — how does the hand behave when a tendon breaks?",
+        "Have you explored partnerships with existing prosthetics companies for distribution?"
+      ]
+    },
+    "created_at": "2025-04-11T14:00:00Z",
+    "completed_at": "2025-04-11T15:30:00Z"
+  },
+  {
+    "id": "i0000001-0000-0000-0000-000000000003",
+    "submission_id": "s0000001-0000-0000-0000-000000000003",
+    "user_id": "usr_participant_3",
+    "participant_name": "Njeri Wambui",
+    "status": "in_progress",
+    "questions": [
+      {
+        "id": "q0000001-0000-0000-0000-000000000012",
+        "order": 1,
+        "category": "technical",
+        "question": "Explain how your Isolation Forest model detects contamination events. What features do you use and how did you set the contamination threshold?",
+        "context": "The anomaly detection is a core differentiator of the system.",
+        "expected_depth": "Should discuss feature engineering from raw sensor data, contamination fraction parameter selection, and false positive analysis.",
+        "max_duration_seconds": 180
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000013",
+        "order": 2,
+        "category": "technical",
+        "question": "How do you handle sensor calibration drift over time? Your evaluation noted this as a concern.",
+        "context": "Water quality sensors are known to drift, especially pH and dissolved oxygen.",
+        "expected_depth": "Should discuss calibration schedules, drift detection, or automatic compensation strategies.",
+        "max_duration_seconds": 180
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000014",
+        "order": 3,
+        "category": "process",
+        "question": "Describe your deployment process for a new sensor node. How long does it take and what expertise is required?",
+        "context": "Scalability depends on ease of deployment.",
+        "expected_depth": "Should discuss physical installation, network configuration, calibration, and ongoing maintenance requirements.",
+        "max_duration_seconds": 150
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000015",
+        "order": 4,
+        "category": "authenticity",
+        "question": "Your evaluation noted that the backend lacks input validation on several endpoints. Can you explain why and what your plan is to address it?",
+        "context": "Code quality concern from the evaluation.",
+        "expected_depth": "Should acknowledge the gap honestly and describe a concrete plan to address it.",
+        "max_duration_seconds": 120
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000016",
+        "order": 5,
+        "category": "behavioral",
+        "question": "How did you establish the partnership with Kiambu County Water Authority? What was the most challenging aspect of working with a government entity?",
+        "context": "Government partnership provides deployment credibility.",
+        "expected_depth": "Should demonstrate relationship-building skills and patience navigating bureaucratic processes.",
+        "max_duration_seconds": 150
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000017",
+        "order": 6,
+        "category": "technical",
+        "question": "If connectivity to the LoRaWAN gateway is lost for 48 hours, what happens to the data and alerts?",
+        "context": "Reliability in connectivity-constrained environments is critical.",
+        "expected_depth": "Should discuss local data buffering, alert queuing, and recovery procedures.",
+        "max_duration_seconds": 150
+      }
+    ],
+    "created_at": "2025-04-14T10:00:00Z"
+  },
+  {
+    "id": "i0000001-0000-0000-0000-000000000004",
+    "submission_id": "s0000001-0000-0000-0000-000000000005",
+    "user_id": "usr_participant_5",
+    "participant_name": "Emeka Okafor",
+    "status": "pending",
+    "questions": [
+      {
+        "id": "q0000001-0000-0000-0000-000000000018",
+        "order": 1,
+        "category": "technical",
+        "question": "Explain your multi-modal sensor fusion architecture. How do you handle temporal misalignment between the RGB, thermal, and LiDAR streams?",
+        "context": "Sensor fusion is the technical core of the system.",
+        "expected_depth": "Should discuss synchronization strategies, coordinate frame alignment, and late vs. early fusion trade-offs.",
+        "max_duration_seconds": 180
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000019",
+        "order": 2,
+        "category": "technical",
+        "question": "Your evaluation flagged unencrypted telemetry as a security concern. How would you address this for a defense application?",
+        "context": "Security is critical for the defense use case.",
+        "expected_depth": "Should discuss encryption options, key management, and the trade-off between security and latency.",
+        "max_duration_seconds": 150
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000020",
+        "order": 3,
+        "category": "process",
+        "question": "Describe your testing methodology for the autonomous flight system. How do you validate safety-critical failsafe modes?",
+        "context": "Safety validation is essential for autonomous UAV operations.",
+        "expected_depth": "Should discuss simulation testing, hardware-in-the-loop testing, and field test protocols.",
+        "max_duration_seconds": 180
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000021",
+        "order": 4,
+        "category": "authenticity",
+        "question": "You report 96% daytime detection accuracy. What was your test dataset and how did you prevent data leakage between training and evaluation?",
+        "context": "Accuracy claims need validation against rigorous evaluation methodology.",
+        "expected_depth": "Should describe dataset composition, train/test split strategy, and cross-validation approach.",
+        "max_duration_seconds": 150
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000022",
+        "order": 5,
+        "category": "behavioral",
+        "question": "Autonomous surveillance raises ethical concerns. How do you think about the ethical implications of your system, and what safeguards have you considered?",
+        "context": "The evaluation noted the absence of an ethical framework.",
+        "expected_depth": "Should demonstrate thoughtful engagement with dual-use technology ethics and propose specific safeguards.",
+        "max_duration_seconds": 180
+      }
+    ],
+    "created_at": "2025-04-15T08:00:00Z"
+  },
+  {
+    "id": "i0000001-0000-0000-0000-000000000005",
+    "submission_id": "s0000001-0000-0000-0000-000000000004",
+    "user_id": "usr_participant_4",
+    "participant_name": "Kwame Mensah",
+    "status": "reviewed",
+    "questions": [
+      {
+        "id": "q0000001-0000-0000-0000-000000000023",
+        "order": 1,
+        "category": "technical",
+        "question": "Your evaluation noted a significant dataset imbalance: 70% maize, 20% cassava, 10% cocoa. What is your plan to address this and how does it affect model performance?",
+        "context": "Dataset imbalance was flagged as a key weakness.",
+        "expected_depth": "Should discuss data collection plans, augmentation strategies, or class weighting approaches.",
+        "max_duration_seconds": 180
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000024",
+        "order": 2,
+        "category": "technical",
+        "question": "How does your model handle images that do not contain any of the target diseases — for example, a healthy leaf or a non-crop plant?",
+        "context": "No confidence threshold was flagged in the evaluation.",
+        "expected_depth": "Should discuss out-of-distribution detection, confidence calibration, or abstain mechanisms.",
+        "max_duration_seconds": 150
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000025",
+        "order": 3,
+        "category": "process",
+        "question": "Have you tested the app with actual farmers in the field? If so, describe the experience. If not, explain why and what your plan is.",
+        "context": "No evidence of user testing was noted in the evaluation.",
+        "expected_depth": "Should provide honest account and concrete user testing plan.",
+        "max_duration_seconds": 150
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000026",
+        "order": 4,
+        "category": "authenticity",
+        "question": "The voice output feature in Twi was noted as having pronunciation issues. Can you demonstrate it and explain how you generated the Twi audio?",
+        "context": "Voice output quality was flagged as a concern.",
+        "expected_depth": "Should explain the TTS approach and acknowledge limitations honestly.",
+        "max_duration_seconds": 120
+      },
+      {
+        "id": "q0000001-0000-0000-0000-000000000027",
+        "order": 5,
+        "category": "behavioral",
+        "question": "If you had to start this project over, what would you do differently?",
+        "context": "Assessing self-awareness and learning ability.",
+        "expected_depth": "Should demonstrate reflection on mistakes and prioritization of user research.",
+        "max_duration_seconds": 150
+      }
+    ],
+    "overall_report": {
+      "overall_score": 58,
+      "recommendation": "Needs Follow-up",
+      "summary": "Kwame showed genuine passion for the problem but the interview revealed significant gaps in execution rigor. He acknowledged the dataset imbalance but did not have a concrete plan to address it beyond 'collecting more images.' The lack of user testing is concerning — he admitted that he had not yet visited any farms. The Twi voice output demonstration confirmed the pronunciation issues flagged in the evaluation. On the positive side, he was honest about limitations and showed good instincts about what needs to improve. A follow-up is recommended after he has conducted user testing with at least 5 farmers and addressed the dataset imbalance.",
+      "strength_areas": [
+        "Genuine passion for agricultural technology and farmer empowerment",
+        "Honest about limitations and open to feedback",
+        "Good intuition about the importance of voice-based interaction for the target audience"
+      ],
+      "concern_areas": [
+        "No user testing conducted with target farmers",
+        "Dataset imbalance plan is vague — needs specific data collection strategy",
+        "Twi TTS quality is not adequate for production use",
+        "No confidence threshold or out-of-distribution detection in the current model"
+      ],
+      "red_flags": [
+        "Claimed in the submission to have evidence of user testing, but admitted during interview that no field testing has occurred"
+      ],
+      "follow_up_questions": [
+        "After conducting user testing with farmers, what were the top 3 issues they identified?",
+        "Can you demonstrate a balanced dataset with at least 1,000 cassava and 500 cocoa disease images?"
+      ]
+    },
+    "created_at": "2025-04-12T11:00:00Z",
+    "completed_at": "2025-04-12T12:00:00Z"
+  }
+]

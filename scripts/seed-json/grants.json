@@ -1,0 +1,32 @@
+[
+  {
+    "id": "g0000001-0000-0000-0000-000000000001",
+    "submission_id": "s0000001-0000-0000-0000-000000000001",
+    "user_id": "usr_participant_1",
+    "participant_name": "Adaeze Okonkwo",
+    "total_amount": 20000,
+    "currency": "USD",
+    "status": "active",
+    "created_at": "2025-05-01T09:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000002",
+    "submission_id": "s0000001-0000-0000-0000-000000000002",
+    "user_id": "usr_participant_2",
+    "participant_name": "Youssef Benali",
+    "total_amount": 20000,
+    "currency": "USD",
+    "status": "active",
+    "created_at": "2025-05-01T09:00:00Z"
+  },
+  {
+    "id": "g0000001-0000-0000-0000-000000000003",
+    "submission_id": "s0000001-0000-0000-0000-000000000005",
+    "user_id": "usr_participant_5",
+    "participant_name": "Emeka Okafor",
+    "total_amount": 15000,
+    "currency": "USD",
+    "status": "active",
+    "created_at": "2025-05-15T09:00:00Z"
+  }
+]

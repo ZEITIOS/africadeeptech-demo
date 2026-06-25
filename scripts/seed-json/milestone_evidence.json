@@ -1,0 +1,150 @@
+[
+  {
+    "id": "v0000001-0000-0000-0000-000000000001",
+    "milestone_id": "m0000001-0000-0000-0000-000000000001",
+    "user_id": "usr_participant_1",
+    "narrative": "All 10 Raspberry Pi 4 units have been procured and assembled with industrial-grade ACS712 current sensors and weatherproof IP67 enclosures. Solar power modules (20W panels + MPPT charge controllers) have been bench-tested and validated to sustain 24/7 operation. We established a supply chain relationship with MicroCity Electronics in Lagos and Kudelux in Ibadan for ongoing component sourcing. Total component spend was $4,620 — under budget by $380 which we will carry forward to Milestone 2 for additional cable management supplies needed for field deployment.",
+    "files": [
+      {
+        "url": "https://storage.adt-demo.org/evidence/sg-m1-receipts.pdf",
+        "key": "sg-m1-receipts.pdf",
+        "type": "application/pdf",
+        "name": "Component purchase receipts"
+      },
+      {
+        "url": "https://storage.adt-demo.org/evidence/sg-m1-assembly.jpg",
+        "key": "sg-m1-assembly.jpg",
+        "type": "image/jpeg",
+        "name": "Assembled sensor node kits"
+      },
+      {
+        "url": "https://storage.adt-demo.org/evidence/sg-m1-supply-chain.pdf",
+        "key": "sg-m1-supply-chain.pdf",
+        "type": "application/pdf",
+        "name": "Supply chain documentation"
+      }
+    ],
+    "repo_url": "https://github.com/solargrid-ai/edge-optimizer/tree/milestone-1",
+    "ai_review": {
+      "completeness_score": 92,
+      "progress_assessment": "All deliverables have been met. Component procurement is complete with detailed receipts. Assembly photos confirm 10 functional sensor node kits. Supply chain documentation is thorough with backup supplier contacts. The under-budget delivery and plan to carry forward savings is well-managed.",
+      "concerns": [],
+      "recommendation": "Approve"
+    },
+    "reviewer_decision": "approved",
+    "reviewer_notes": "Strong execution on procurement and assembly. Supply chain documentation exceeds expectations. Approved with commendation for budget management.",
+    "submitted_at": "2025-05-28T14:00:00Z",
+    "reviewed_at": "2025-06-02T10:00:00Z"
+  },
+  {
+    "id": "v0000001-0000-0000-0000-000000000002",
+    "milestone_id": "m0000001-0000-0000-0000-000000000002",
+    "user_id": "usr_participant_1",
+    "narrative": "We deployed sensor nodes at 2 new Arnergy mini-grid sites: Ogbomoso (50 households) and Sango-Ota (35 households). Both sites have been operational for 4 weeks. The load forecasting model achieved 18% diesel reduction at Ogbomoso and 22% at Sango-Ota during the initial data collection period — lower than the 30% at our original sites, which we attribute to the cold-start period. Performance is improving weekly as the model accumulates site-specific data. Deployment took 2 days per site with a 2-person team. Key field engineering lesson: the IP67 enclosures need additional ventilation holes in the Nigerian climate — internal temperatures reached 65 degrees Celsius on hot days, which caused the Pi to thermal-throttle. We added passive ventilation slots with mesh filters as a field modification.",
+    "files": [
+      {
+        "url": "https://storage.adt-demo.org/evidence/sg-m2-forecast-data.csv",
+        "key": "sg-m2-forecast-data.csv",
+        "type": "text/csv",
+        "name": "4-week forecast predictions vs actuals"
+      },
+      {
+        "url": "https://storage.adt-demo.org/evidence/sg-m2-deployment-report.pdf",
+        "key": "sg-m2-deployment-report.pdf",
+        "type": "application/pdf",
+        "name": "Deployment report with site photos"
+      },
+      {
+        "url": "https://storage.adt-demo.org/evidence/sg-m2-walkthrough.mp4",
+        "key": "sg-m2-walkthrough.mp4",
+        "type": "video/mp4",
+        "name": "System walkthrough at Ogbomoso site"
+      }
+    ],
+    "repo_url": "https://github.com/solargrid-ai/edge-optimizer/tree/milestone-2",
+    "ai_review": {
+      "completeness_score": 85,
+      "progress_assessment": "Deployment at 2 new sites is confirmed with 4 weeks of operational data. Diesel reduction metrics (18-22%) are lower than the original sites but consistent with the expected cold-start period. The thermal management issue is a genuine concern that was proactively addressed with a field modification. Deployment report is detailed and includes useful field engineering lessons.",
+      "concerns": [
+        "Diesel reduction at new sites is significantly below the 30% baseline — needs monitoring to confirm the model converges",
+        "Thermal management issue suggests the hardware design needs revision before wider deployment"
+      ],
+      "recommendation": "Approve"
+    },
+    "submitted_at": "2025-07-12T16:00:00Z"
+  },
+  {
+    "id": "v0000001-0000-0000-0000-000000000003",
+    "milestone_id": "m0000001-0000-0000-0000-000000000005",
+    "user_id": "usr_participant_2",
+    "narrative": "The analog front-end has been redesigned with a dedicated instrumentation amplifier (INA128) replacing the AD8232 module, providing 20dB better common-mode rejection. The sliding-window majority voting classifier has been implemented and validated with 3 patients at CHU Ibn Rochd. Grip transition latency improved from 1.5 seconds to 380 milliseconds on average — below our 400ms target. All 3 patients reported a subjectively noticeable improvement in grip switching speed. Patient Mourad (our most demanding user) confirmed the speed is now acceptable for his carpentry work.",
+    "files": [
+      {
+        "url": "https://storage.adt-demo.org/evidence/cb-m1-schematic.pdf",
+        "key": "cb-m1-schematic.pdf",
+        "type": "application/pdf",
+        "name": "Updated circuit schematic"
+      },
+      {
+        "url": "https://storage.adt-demo.org/evidence/cb-m1-latency-data.csv",
+        "key": "cb-m1-latency-data.csv",
+        "type": "text/csv",
+        "name": "Grip transition latency measurements"
+      },
+      {
+        "url": "https://storage.adt-demo.org/evidence/cb-m1-patient-demo.mp4",
+        "key": "cb-m1-patient-demo.mp4",
+        "type": "video/mp4",
+        "name": "Patient demonstration video"
+      }
+    ],
+    "ai_review": {
+      "completeness_score": 95,
+      "progress_assessment": "All deliverables exceeded expectations. The INA128 upgrade is a significant improvement over the AD8232. The 380ms grip transition latency beats the 400ms target. Patient validation with 3 subjects including the previously critical patient Mourad adds strong credibility. Video evidence is clear and convincing.",
+      "concerns": [],
+      "recommendation": "Approve"
+    },
+    "reviewer_decision": "approved",
+    "reviewer_notes": "Outstanding milestone delivery. The latency improvement is clinically meaningful and well-validated. The patient follow-up with Mourad is a nice touch that demonstrates genuine user-centered development.",
+    "submitted_at": "2025-05-29T11:00:00Z",
+    "reviewed_at": "2025-06-03T09:00:00Z"
+  },
+  {
+    "id": "v0000001-0000-0000-0000-000000000004",
+    "milestone_id": "m0000001-0000-0000-0000-000000000006",
+    "user_id": "usr_participant_2",
+    "narrative": "5 complete prosthetic units have been produced with updated housing design that is compatible with both 3D printing (FDM) and injection molding. All housing parts were printed in recycled PETG from Eko3D in Casablanca. Each unit comes with a comprehensive user guide in French and Arabic covering fitting, calibration, charging, and basic maintenance. The injection molding-compatible design was validated by sending STEP files to a local molding shop (Plastima Maroc) who confirmed the parts are moldable with minor draft angle adjustments. Updated BOM per unit: $82 (down from $85 due to bulk motor purchase).",
+    "files": [
+      {
+        "url": "https://storage.adt-demo.org/evidence/cb-m2-cad-step.zip",
+        "key": "cb-m2-cad-step.zip",
+        "type": "application/zip",
+        "name": "STEP and Fusion 360 CAD files"
+      },
+      {
+        "url": "https://storage.adt-demo.org/evidence/cb-m2-units.jpg",
+        "key": "cb-m2-units.jpg",
+        "type": "image/jpeg",
+        "name": "5 completed prosthetic units"
+      },
+      {
+        "url": "https://storage.adt-demo.org/evidence/cb-m2-user-guide.pdf",
+        "key": "cb-m2-user-guide.pdf",
+        "type": "application/pdf",
+        "name": "User guide (FR/AR)"
+      }
+    ],
+    "ai_review": {
+      "completeness_score": 94,
+      "progress_assessment": "All 5 units produced and documented. CAD files provided in both formats. Injection molding feasibility validated with a local manufacturer. User guide in French and Arabic demonstrates thoughtful localization. BOM cost reduction from $85 to $82 shows continued cost optimization.",
+      "concerns": [
+        "Draft angle adjustments for injection molding should be incorporated into the master CAD files before Milestone 3"
+      ],
+      "recommendation": "Approve"
+    },
+    "reviewer_decision": "approved",
+    "reviewer_notes": "Excellent manufacturing progress. The bilingual user guide and injection molding validation show forward thinking. Approved — please integrate the draft angle adjustments into the master CAD before the clinical trial.",
+    "submitted_at": "2025-07-10T14:00:00Z",
+    "reviewed_at": "2025-07-16T11:00:00Z"
+  }
+]

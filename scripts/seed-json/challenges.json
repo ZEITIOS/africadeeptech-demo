@@ -1,0 +1,62 @@
+[
+  {
+    "id": "c0000001-0000-0000-0000-000000000001",
+    "name": "Africa DeepTech Challenge 2025 — Resource-Constrained Computing",
+    "description": "Build a working prototype that demonstrates creative problem-solving under real-world constraints common across Africa: limited compute, intermittent connectivity, power instability, and cost-sensitive hardware. Projects must target an actual use case and be deployable on sub-$100 hardware.",
+    "year": 2025,
+    "status": "closed",
+    "criteria": [
+      {
+        "name": "Technical Implementation",
+        "weight": 35,
+        "description": "Quality of engineering: code architecture, algorithm efficiency, error handling, and ability to run on resource-constrained hardware."
+      },
+      {
+        "name": "Creative Problem-Solving",
+        "weight": 25,
+        "description": "Originality of the approach to working within constraints. Novel trade-offs, clever workarounds, and unconventional architectures."
+      },
+      {
+        "name": "Process Documentation",
+        "weight": 20,
+        "description": "Clarity of decision logs, README, architecture diagrams, and reproducibility of the build process."
+      },
+      {
+        "name": "Usability & Relevance",
+        "weight": 20,
+        "description": "Practical applicability to the target use case. Evidence of user testing or stakeholder feedback."
+      }
+    ],
+    "created_at": "2025-01-15T09:00:00Z"
+  },
+  {
+    "id": "c0000001-0000-0000-0000-000000000002",
+    "name": "Africa DeepTech Challenge 2026 — AI for Africa",
+    "description": "Design and build an AI-powered solution that addresses a pressing challenge on the African continent. Projects should demonstrate technical depth, cultural awareness, and a viable path to deployment. Bonus consideration for solutions that work offline or on low-bandwidth networks.",
+    "year": 2026,
+    "status": "active",
+    "criteria": [
+      {
+        "name": "Technical Implementation",
+        "weight": 30,
+        "description": "Model architecture choices, training methodology, inference optimization, and engineering quality."
+      },
+      {
+        "name": "Innovation & Originality",
+        "weight": 25,
+        "description": "Novelty of the approach. Unique datasets, creative model adaptations, or new applications of existing techniques."
+      },
+      {
+        "name": "Documentation & Reproducibility",
+        "weight": 20,
+        "description": "Experiment tracking, model cards, data documentation, and the ability for others to reproduce or extend the work."
+      },
+      {
+        "name": "Impact & Scalability",
+        "weight": 25,
+        "description": "Potential to create measurable impact at scale. Viable deployment plan, cost analysis, and evidence of demand."
+      }
+    ],
+    "created_at": "2026-01-10T09:00:00Z"
+  }
+]

@@ -1,0 +1,217 @@
+[
+  {
+    "id": "s0000001-0000-0000-0000-000000000001",
+    "challenge_id": "c0000001-0000-0000-0000-000000000001",
+    "user_id": "usr_participant_1",
+    "participant_name": "Adaeze Okonkwo",
+    "team_name": "SolarGrid AI",
+    "repo_url": "https://github.com/solargrid-ai/edge-optimizer",
+    "documentation_url": "https://solargrid-ai.notion.site/docs",
+    "video_pitch_url": "https://www.loom.com/share/solargrid-ai-pitch-2025",
+    "description": "An edge ML system that optimizes electricity distribution across solar mini-grids in real time. The model runs on a Raspberry Pi 4 and uses load forecasting, battery state-of-charge prediction, and demand-response signals to reduce diesel generator dependency by up to 30%. Trained on 14 months of real metering data from 3 mini-grid sites in Ogun State.",
+    "claimed_technologies": [
+      "TensorFlow Lite",
+      "Raspberry Pi",
+      "MQTT",
+      "Python",
+      "InfluxDB",
+      "Grafana"
+    ],
+    "country": "Nigeria",
+    "city": "Lagos",
+    "status": "evaluated",
+    "created_at": "2025-03-10T14:22:00Z"
+  },
+  {
+    "id": "s0000001-0000-0000-0000-000000000002",
+    "challenge_id": "c0000001-0000-0000-0000-000000000001",
+    "user_id": "usr_participant_2",
+    "participant_name": "Youssef Benali",
+    "team_name": "CureBionics",
+    "repo_url": "https://github.com/curebionics/emg-prosthetic",
+    "documentation_url": "https://curebionics.gitbook.io/docs",
+    "video_pitch_url": "https://www.loom.com/share/curebionics-pitch-2025",
+    "description": "A low-cost below-elbow bionic prosthetic that uses surface EMG sensors to detect muscle activation patterns and translate them into grip commands. The housing is 3D-printed from recycled PETG, and the control board runs on an STM32 microcontroller drawing under 200mA. Total bill of materials is $85, compared to $3,000+ for imported alternatives. Tested with 6 patients at CHU Ibn Rochd hospital.",
+    "claimed_technologies": [
+      "STM32",
+      "EMG Signal Processing",
+      "3D Printing",
+      "C/C++",
+      "FreeRTOS",
+      "Fusion 360"
+    ],
+    "country": "Morocco",
+    "city": "Casablanca",
+    "status": "evaluated",
+    "created_at": "2025-03-08T11:45:00Z"
+  },
+  {
+    "id": "s0000001-0000-0000-0000-000000000003",
+    "challenge_id": "c0000001-0000-0000-0000-000000000001",
+    "user_id": "usr_participant_3",
+    "participant_name": "Njeri Wambui",
+    "team_name": "AquaSense",
+    "repo_url": "https://github.com/aquasense-iot/lorawan-monitor",
+    "video_pitch_url": "https://www.loom.com/share/aquasense-pitch-2025",
+    "description": "An IoT water quality monitoring network using LoRaWAN sensors deployed across community boreholes in Kiambu County. Each node measures pH, turbidity, dissolved oxygen, and temperature, transmitting readings every 15 minutes to a central dashboard. Anomaly detection runs on a lightweight gradient-boosted model that triggers SMS alerts to county water officers when contamination thresholds are breached.",
+    "claimed_technologies": [
+      "LoRaWAN",
+      "The Things Network",
+      "ESP32",
+      "scikit-learn",
+      "Node.js",
+      "Twilio"
+    ],
+    "country": "Kenya",
+    "city": "Nairobi",
+    "status": "evaluated",
+    "created_at": "2025-03-12T08:30:00Z"
+  },
+  {
+    "id": "s0000001-0000-0000-0000-000000000004",
+    "challenge_id": "c0000001-0000-0000-0000-000000000001",
+    "user_id": "usr_participant_4",
+    "participant_name": "Kwame Mensah",
+    "team_name": "FarmSpeak",
+    "repo_url": "https://github.com/farmspeak/crop-scanner",
+    "description": "An offline crop disease detection app that runs entirely on a smartphone camera without internet connectivity. The MobileNetV2 model was fine-tuned on 12,000 images of maize, cassava, and cocoa diseases common in West Africa. Inference takes under 2 seconds on mid-range Android phones. Includes voice-based results in Twi and Ewe for farmers who are not literate.",
+    "claimed_technologies": [
+      "TensorFlow Lite",
+      "Android",
+      "Kotlin",
+      "MobileNetV2",
+      "MediaPipe"
+    ],
+    "country": "Ghana",
+    "city": "Accra",
+    "status": "evaluated",
+    "created_at": "2025-03-14T16:10:00Z"
+  },
+  {
+    "id": "s0000001-0000-0000-0000-000000000005",
+    "challenge_id": "c0000001-0000-0000-0000-000000000001",
+    "user_id": "usr_participant_5",
+    "participant_name": "Emeka Okafor",
+    "team_name": "ShieldDrone",
+    "repo_url": "https://github.com/shielddrone/uav-surveillance",
+    "documentation_url": "https://shielddrone.readthedocs.io",
+    "video_pitch_url": "https://www.loom.com/share/shielddrone-pitch-2025",
+    "description": "An autonomous border surveillance UAV system that uses onboard computer vision to detect and classify unauthorized crossings in real time. The perception stack runs on an NVIDIA Jetson Orin Nano and fuses RGB, thermal, and LiDAR data. The system operates autonomously for 45-minute missions with automatic return-to-base and can cover a 12km patrol corridor. Designed for use by national security agencies in terrain where ground patrols are impractical.",
+    "claimed_technologies": [
+      "ROS 2",
+      "NVIDIA Jetson",
+      "YOLOv8",
+      "LiDAR",
+      "PX4",
+      "C++",
+      "Python"
+    ],
+    "country": "Nigeria",
+    "city": "Abuja",
+    "status": "evaluated",
+    "created_at": "2025-03-09T09:15:00Z"
+  },
+  {
+    "id": "s0000001-0000-0000-0000-000000000006",
+    "challenge_id": "c0000001-0000-0000-0000-000000000001",
+    "user_id": "usr_participant_6",
+    "participant_name": "Selamawit Gebru",
+    "team_name": "MediScan",
+    "video_pitch_url": "https://www.loom.com/share/mediscan-pitch-2025",
+    "description": "A portable sickle-cell screening device that uses a smartphone microscope attachment and a trained convolutional neural network to identify sickle-shaped red blood cells in peripheral blood smears. The device costs under $15 to manufacture and the app runs offline on Android 8+. Preliminary testing at Tikur Anbessa Hospital showed 89% sensitivity and 93% specificity compared to gold-standard hemoglobin electrophoresis.",
+    "claimed_technologies": [
+      "PyTorch Mobile",
+      "Android",
+      "OpenCV",
+      "3D Printing",
+      "Java"
+    ],
+    "country": "Ethiopia",
+    "city": "Addis Ababa",
+    "status": "evaluated",
+    "created_at": "2025-03-11T13:00:00Z"
+  },
+  {
+    "id": "s0000001-0000-0000-0000-000000000007",
+    "challenge_id": "c0000001-0000-0000-0000-000000000001",
+    "user_id": "usr_participant_7",
+    "participant_name": "Jean-Pierre Habimana",
+    "team_name": "CryptoVault",
+    "repo_url": "https://github.com/cryptovault-rw/zk-identity",
+    "description": "A zero-knowledge proof identity verification system for mobile banking in East Africa. Uses zk-SNARKs to allow users to prove their identity to financial institutions without revealing underlying personal data. Built on a Circom circuit that generates proofs on-device in under 10 seconds on modern smartphones.",
+    "claimed_technologies": [
+      "Circom",
+      "SnarkJS",
+      "React Native",
+      "Node.js",
+      "Solidity"
+    ],
+    "country": "Rwanda",
+    "city": "Kigali",
+    "status": "evaluated",
+    "created_at": "2025-03-15T10:20:00Z"
+  },
+  {
+    "id": "s0000001-0000-0000-0000-000000000008",
+    "challenge_id": "c0000001-0000-0000-0000-000000000001",
+    "user_id": "usr_participant_8",
+    "participant_name": "Fatima El-Amin",
+    "team_name": "ClimateNet",
+    "repo_url": "https://github.com/climatenet-eg/sat-predict",
+    "description": "A satellite-based climate prediction model that downscales ERA5 reanalysis data to 1km resolution for North Africa using a conditional diffusion model. The system ingests Sentinel-2 imagery and MODIS land surface temperature to produce 7-day precipitation and temperature forecasts tailored to Egyptian agricultural zones.",
+    "claimed_technologies": [
+      "Python",
+      "xarray",
+      "PyTorch",
+      "Diffusion Models",
+      "Google Earth Engine",
+      "dask"
+    ],
+    "country": "Egypt",
+    "city": "Cairo",
+    "status": "pending",
+    "created_at": "2025-03-18T07:45:00Z"
+  },
+  {
+    "id": "s0000001-0000-0000-0000-000000000009",
+    "challenge_id": "c0000001-0000-0000-0000-000000000001",
+    "user_id": "usr_participant_9",
+    "participant_name": "Zanele Dlamini",
+    "team_name": "NeuroBridge",
+    "description": "A brain-computer interface system for paralysis rehabilitation that uses low-cost EEG headsets to detect motor imagery patterns and drive a gamified physical therapy protocol. The system adapts difficulty in real time based on patient engagement and neural signal quality, making neuroplasticity-driven rehab accessible outside specialist hospitals.",
+    "claimed_technologies": [
+      "Python",
+      "OpenBCI",
+      "scikit-learn",
+      "Unity",
+      "C#",
+      "WebSocket"
+    ],
+    "country": "South Africa",
+    "city": "Cape Town",
+    "status": "pending",
+    "created_at": "2025-03-19T15:30:00Z"
+  },
+  {
+    "id": "s0000001-0000-0000-0000-000000000010",
+    "challenge_id": "c0000001-0000-0000-0000-000000000001",
+    "user_id": "usr_participant_10",
+    "participant_name": "Amina Juma",
+    "team_name": "PowerHarvest",
+    "repo_url": "https://github.com/powerharvest-tz/piezo-energy",
+    "video_pitch_url": "https://www.loom.com/share/powerharvest-pitch-2025",
+    "description": "A piezoelectric energy harvesting system that generates electricity from pedestrian foot traffic in high-density areas such as bus terminals and markets. Each tile module produces 5-8W under sustained traffic and stores energy in supercapacitors for charging mobile phones and powering LED lighting. The system was tested at Kariakoo Market with over 2,000 daily footfalls recorded.",
+    "claimed_technologies": [
+      "Arduino",
+      "Piezoelectric Ceramics",
+      "PCB Design",
+      "C",
+      "React",
+      "Firebase"
+    ],
+    "country": "Tanzania",
+    "city": "Dar es Salaam",
+    "status": "evaluating",
+    "created_at": "2025-03-16T12:00:00Z"
+  }
+]

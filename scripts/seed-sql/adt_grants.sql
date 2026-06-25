@@ -1,0 +1,4 @@
+INSERT INTO adt_grants (id, submission_id, user_id, participant_name, total_amount, currency, status, created_at) VALUES
+('f1000001-0000-0000-0000-000000000001', 'a1000001-0000-0000-0000-000000000001', 'usr_participant_1', 'Adaeze Okonkwo', 20000, 'USD', 'active', '2025-05-01T09:00:00Z'),
+('f1000001-0000-0000-0000-000000000002', 'a1000001-0000-0000-0000-000000000002', 'usr_participant_2', 'Youssef Benali', 20000, 'USD', 'active', '2025-05-01T09:00:00Z'),
+('f1000001-0000-0000-0000-000000000003', 'a1000001-0000-0000-0000-000000000005', 'usr_participant_5', 'Emeka Okafor', 15000, 'USD', 'active', '2025-05-15T09:00:00Z');

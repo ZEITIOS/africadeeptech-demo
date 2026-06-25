@@ -1,0 +1,281 @@
+[
+  {
+    "id": "m0000001-0000-0000-0000-000000000001",
+    "grant_id": "g0000001-0000-0000-0000-000000000001",
+    "order_num": 1,
+    "title": "Component Procurement & Assembly",
+    "description": "Procure 10 Raspberry Pi 4 units, industrial current sensors, weatherproof enclosures, and solar power modules. Assemble and bench-test all sensor node kits. Establish supply chain relationships with local electronics distributors.",
+    "evidence_requirements": [
+      {
+        "type": "receipt",
+        "description": "Purchase receipts for all components with supplier details"
+      },
+      {
+        "type": "photo",
+        "description": "Photos of assembled sensor node kits on bench"
+      },
+      {
+        "type": "document",
+        "description": "Supply chain documentation with contact details for future orders"
+      }
+    ],
+    "amount": 5000,
+    "deadline": "2025-06-01T00:00:00Z",
+    "status": "approved",
+    "created_at": "2025-05-01T09:00:00Z"
+  },
+  {
+    "id": "m0000001-0000-0000-0000-000000000002",
+    "grant_id": "g0000001-0000-0000-0000-000000000001",
+    "order_num": 2,
+    "title": "Prototype Testing & Validation",
+    "description": "Deploy sensor nodes at 2 new Arnergy mini-grid sites. Collect 4 weeks of operational data. Validate load forecasting accuracy on the new sites and compare with the baseline rule-based controller. Document deployment procedures and field engineering lessons.",
+    "evidence_requirements": [
+      {
+        "type": "data",
+        "description": "4 weeks of timestamped load forecasting predictions vs. actuals"
+      },
+      {
+        "type": "report",
+        "description": "Deployment report with photos, site configurations, and performance metrics"
+      },
+      {
+        "type": "video",
+        "description": "Video walkthrough of deployed system at one site"
+      }
+    ],
+    "amount": 5000,
+    "deadline": "2025-07-15T00:00:00Z",
+    "status": "submitted",
+    "created_at": "2025-05-01T09:00:00Z"
+  },
+  {
+    "id": "m0000001-0000-0000-0000-000000000003",
+    "grant_id": "g0000001-0000-0000-0000-000000000001",
+    "order_num": 3,
+    "title": "Field Deployment Pilot",
+    "description": "Expand deployment to 5 total sites. Implement automated model retraining pipeline triggered by performance degradation. Conduct A/B testing between ML-optimized and rule-based control to produce statistically significant diesel savings data.",
+    "evidence_requirements": [
+      {
+        "type": "data",
+        "description": "A/B test results with statistical significance analysis"
+      },
+      {
+        "type": "code",
+        "description": "Link to automated retraining pipeline in repository"
+      },
+      {
+        "type": "report",
+        "description": "Comprehensive pilot report with diesel savings metrics across all sites"
+      }
+    ],
+    "amount": 5000,
+    "deadline": "2025-09-01T00:00:00Z",
+    "status": "pending",
+    "created_at": "2025-05-01T09:00:00Z"
+  },
+  {
+    "id": "m0000001-0000-0000-0000-000000000004",
+    "grant_id": "g0000001-0000-0000-0000-000000000001",
+    "order_num": 4,
+    "title": "Customer Discovery & Market Validation",
+    "description": "Conduct customer discovery interviews with 10+ independent mini-grid operators beyond Arnergy. Develop pricing model and partnership framework. Produce a market validation report with letter of intent from at least 2 new operators.",
+    "evidence_requirements": [
+      {
+        "type": "report",
+        "description": "Customer discovery report with anonymized interview summaries"
+      },
+      {
+        "type": "document",
+        "description": "Letters of intent or MoUs from new operators"
+      },
+      {
+        "type": "document",
+        "description": "Pricing model and partnership framework document"
+      }
+    ],
+    "amount": 5000,
+    "deadline": "2025-10-15T00:00:00Z",
+    "status": "pending",
+    "created_at": "2025-05-01T09:00:00Z"
+  },
+  {
+    "id": "m0000001-0000-0000-0000-000000000005",
+    "grant_id": "g0000001-0000-0000-0000-000000000002",
+    "order_num": 1,
+    "title": "EMG Sensor Integration",
+    "description": "Redesign the analog front-end circuit for improved noise rejection. Implement the sliding-window majority voting classifier for faster grip transitions. Validate the improved EMG pipeline with 3 patients and document the improvement in grip transition latency.",
+    "evidence_requirements": [
+      {
+        "type": "schematic",
+        "description": "Updated circuit schematic with noise analysis"
+      },
+      {
+        "type": "data",
+        "description": "Grip transition latency measurements: before vs. after"
+      },
+      {
+        "type": "video",
+        "description": "Patient demonstration video showing improved grip transitions"
+      }
+    ],
+    "amount": 5000,
+    "deadline": "2025-06-01T00:00:00Z",
+    "status": "approved",
+    "created_at": "2025-05-01T09:00:00Z"
+  },
+  {
+    "id": "m0000001-0000-0000-0000-000000000006",
+    "grant_id": "g0000001-0000-0000-0000-000000000002",
+    "order_num": 2,
+    "title": "3D-Printed Housing & Packaging",
+    "description": "Redesign the prosthetic housing for injection molding compatibility while maintaining 3D-printability for prototyping. Source recycled PETG from local suppliers. Produce 5 complete prosthetic units with packaging and user guide.",
+    "evidence_requirements": [
+      {
+        "type": "cad",
+        "description": "Updated CAD files in STEP and Fusion 360 formats"
+      },
+      {
+        "type": "photo",
+        "description": "Photos of 5 completed units with packaging"
+      },
+      {
+        "type": "document",
+        "description": "User guide with fitting instructions"
+      }
+    ],
+    "amount": 5000,
+    "deadline": "2025-07-15T00:00:00Z",
+    "status": "approved",
+    "created_at": "2025-05-01T09:00:00Z"
+  },
+  {
+    "id": "m0000001-0000-0000-0000-000000000007",
+    "grant_id": "g0000001-0000-0000-0000-000000000002",
+    "order_num": 3,
+    "title": "Clinical Trial Preparation",
+    "description": "Prepare a formal clinical trial protocol for submission to ANAM (Morocco's medical device authority). Engage a regulatory consultant. Develop quality management system documentation per ISO 13485 requirements. Identify 20 patients for the expanded trial.",
+    "evidence_requirements": [
+      {
+        "type": "document",
+        "description": "Clinical trial protocol document submitted to ANAM"
+      },
+      {
+        "type": "document",
+        "description": "ISO 13485 quality management system documentation"
+      },
+      {
+        "type": "document",
+        "description": "Patient recruitment plan with clinic partnerships"
+      }
+    ],
+    "amount": 5000,
+    "deadline": "2025-09-01T00:00:00Z",
+    "status": "pending",
+    "created_at": "2025-05-01T09:00:00Z"
+  },
+  {
+    "id": "m0000001-0000-0000-0000-000000000008",
+    "grant_id": "g0000001-0000-0000-0000-000000000002",
+    "order_num": 4,
+    "title": "Patient Testing & Iteration",
+    "description": "Conduct expanded clinical trial with 20 patients over 8 weeks. Collect SHAP scores, patient satisfaction surveys, and durability data. Iterate on the design based on clinical feedback. Publish preliminary results.",
+    "evidence_requirements": [
+      {
+        "type": "data",
+        "description": "SHAP scores and satisfaction surveys for all 20 patients"
+      },
+      {
+        "type": "report",
+        "description": "Clinical trial report with statistical analysis"
+      },
+      {
+        "type": "document",
+        "description": "Design iteration log showing changes made from clinical feedback"
+      }
+    ],
+    "amount": 5000,
+    "deadline": "2025-11-01T00:00:00Z",
+    "status": "pending",
+    "created_at": "2025-05-01T09:00:00Z"
+  },
+  {
+    "id": "m0000001-0000-0000-0000-000000000009",
+    "grant_id": "g0000001-0000-0000-0000-000000000003",
+    "order_num": 1,
+    "title": "Flight Controller & Navigation",
+    "description": "Implement encrypted MAVLink telemetry using AES-256. Develop terrain-following algorithms for low-altitude operations in variable terrain. Validate autonomous mission execution in the simulation environment with at least 50 simulated missions.",
+    "evidence_requirements": [
+      {
+        "type": "code",
+        "description": "Encrypted telemetry implementation with security documentation"
+      },
+      {
+        "type": "data",
+        "description": "Simulation logs for 50+ autonomous missions"
+      },
+      {
+        "type": "video",
+        "description": "Simulation video demonstrating terrain-following in variable terrain"
+      }
+    ],
+    "amount": 5000,
+    "deadline": "2025-06-15T00:00:00Z",
+    "status": "pending",
+    "created_at": "2025-05-15T09:00:00Z"
+  },
+  {
+    "id": "m0000001-0000-0000-0000-000000000010",
+    "grant_id": "g0000001-0000-0000-0000-000000000003",
+    "order_num": 2,
+    "title": "Computer Vision Integration",
+    "description": "Expand the detection model to handle adverse weather conditions (rain, dust, fog). Implement re-identification tracking for persistent monitoring of detected subjects. Optimize inference pipeline to maintain real-time performance on Jetson Orin Nano under thermal throttling.",
+    "evidence_requirements": [
+      {
+        "type": "data",
+        "description": "Detection accuracy metrics across weather conditions"
+      },
+      {
+        "type": "code",
+        "description": "Re-identification tracking module with evaluation metrics"
+      },
+      {
+        "type": "report",
+        "description": "Thermal performance analysis under sustained operation"
+      }
+    ],
+    "amount": 5000,
+    "deadline": "2025-08-01T00:00:00Z",
+    "status": "pending",
+    "created_at": "2025-05-15T09:00:00Z"
+  },
+  {
+    "id": "m0000001-0000-0000-0000-000000000011",
+    "grant_id": "g0000001-0000-0000-0000-000000000003",
+    "order_num": 3,
+    "title": "Field Testing & Documentation",
+    "description": "Conduct 10 field test missions in a controlled outdoor environment. Develop operational procedures manual and operator training curriculum. Produce an ethical use framework and propose regulatory compliance pathway for UAV operations.",
+    "evidence_requirements": [
+      {
+        "type": "data",
+        "description": "Field test logs with GPS tracks and detection events"
+      },
+      {
+        "type": "document",
+        "description": "Operational procedures manual"
+      },
+      {
+        "type": "document",
+        "description": "Ethical use framework and regulatory compliance report"
+      },
+      {
+        "type": "video",
+        "description": "Field test compilation video"
+      }
+    ],
+    "amount": 5000,
+    "deadline": "2025-09-15T00:00:00Z",
+    "status": "pending",
+    "created_at": "2025-05-15T09:00:00Z"
+  }
+]
