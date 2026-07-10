@@ -113,11 +113,14 @@ export default function InterviewRecordingPage() {
           body: formData,
         });
 
-        let transcript = "";
-        if (transcribeRes.ok) {
-          const transcribeData = await transcribeRes.json();
-          transcript = transcribeData.transcript ?? "";
+        if (!transcribeRes.ok) {
+          const t = await transcribeRes.json().catch(() => ({}));
+          throw new Error(
+            (t as { error?: string }).error || "Transcription failed",
+          );
         }
+        const transcribeData = await transcribeRes.json();
+        const transcript: string = transcribeData.transcript ?? "";
 
         // Step 3: Save answer
         setProcessingStep("Saving answer...");
@@ -190,7 +193,7 @@ export default function InterviewRecordingPage() {
       const res = await fetch("/api/interview/report", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ session_id: sessionId }),
+        body: JSON.stringify({ sessionId }),
       });
 
       if (!res.ok) throw new Error("Failed to generate report");

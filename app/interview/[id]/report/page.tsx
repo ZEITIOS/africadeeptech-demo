@@ -89,7 +89,7 @@ export default function InterviewReportPage() {
       const res = await fetch("/api/interview/report", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ session_id: sessionId }),
+        body: JSON.stringify({ sessionId }),
       });
 
       if (!res.ok) throw new Error("Failed to generate report");

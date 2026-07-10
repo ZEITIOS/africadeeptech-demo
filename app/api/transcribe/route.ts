@@ -16,35 +16,50 @@ export async function POST(req: NextRequest) {
       if (textFallback) {
         transcript = textFallback;
       } else if (audioFile) {
-        // Try Whisper transcription via InsForge AI Gateway (OpenAI-compatible)
-        try {
-          const whisperForm = new FormData();
-          whisperForm.append("file", audioFile, "recording.webm");
-          whisperForm.append("model", "whisper-1");
-
-          const whisperRes = await fetch(
-            `${process.env.NEXT_PUBLIC_INSFORGE_URL}/ai/v1/audio/transcriptions`,
-            {
-              method: "POST",
-              headers: {
-                Authorization: `Bearer ${process.env.NEXT_PUBLIC_INSFORGE_ANON_KEY}`,
-              },
-              body: whisperForm,
-            },
+        // Real speech-to-text via OpenAI Whisper (server-side key, never exposed to client)
+        const openaiKey = process.env.OPENAI_API_KEY;
+        if (!openaiKey) {
+          return new Response(
+            JSON.stringify({
+              error:
+                "Transcription is not configured. Set OPENAI_API_KEY on the server.",
+            }),
+            { status: 503, headers: { "Content-Type": "application/json" } },
           );
-
-          if (whisperRes.ok) {
-            const data = await whisperRes.json();
-            transcript = data.text || null;
-          }
-        } catch {
-          // Whisper endpoint not available
         }
 
-        // Fallback: return a placeholder if Whisper failed
+        const whisperForm = new FormData();
+        whisperForm.append("file", audioFile, "recording.webm");
+        whisperForm.append("model", "whisper-1");
+
+        const whisperRes = await fetch(
+          "https://api.openai.com/v1/audio/transcriptions",
+          {
+            method: "POST",
+            headers: { Authorization: `Bearer ${openaiKey}` },
+            body: whisperForm,
+          },
+        );
+
+        if (!whisperRes.ok) {
+          const details = await whisperRes.text().catch(() => "");
+          return new Response(
+            JSON.stringify({
+              error: `Transcription failed (${whisperRes.status})`,
+              details: details.slice(0, 500),
+            }),
+            { status: 502, headers: { "Content-Type": "application/json" } },
+          );
+        }
+
+        const data = await whisperRes.json();
+        transcript = data.text || null;
+
         if (!transcript) {
-          transcript =
-            "[Transcription unavailable] Audio transcription service is not configured. The recorded video is saved and can be reviewed manually.";
+          return new Response(
+            JSON.stringify({ error: "Transcription returned empty text" }),
+            { status: 502, headers: { "Content-Type": "application/json" } },
+          );
         }
       } else {
         return new Response(
